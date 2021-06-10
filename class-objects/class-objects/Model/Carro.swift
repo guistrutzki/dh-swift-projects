@@ -7,16 +7,9 @@
 
 import Foundation
 
-class Carro {
+class Carro: Veiculo {
     
-    var qtdRodas: Int?
-    var cor: String?
     var qtdPortas: Int?
-    var marca: String?
-    var motor: Float?
-    var combustivel: [String]?
-    var ano: Int?
-    var modelo: String?
     var cambioAutomatico: Bool?
     
     init(
@@ -30,6 +23,8 @@ class Carro {
         modelo: String?,
         cambioAutomatico: Bool?
     ) {
+        super.init() 
+        
         self.qtdRodas = qtdRodas
         self.cor = cor
         self.qtdPortas = qtdPortas
@@ -39,6 +34,11 @@ class Carro {
         self.ano = ano
         self.modelo = modelo
         self.cambioAutomatico = cambioAutomatico
+    }
+    
+        
+    static func getRandomCar(_ listOfCars: [Carro]) -> Carro {
+        return listOfCars.randomElement() ?? listOfCars[0]
     }
     
     func imprimirCarro() {

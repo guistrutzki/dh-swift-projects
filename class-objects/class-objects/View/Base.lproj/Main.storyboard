@@ -114,7 +114,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cambio Automático" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IK-TT-Iin">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cambio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IK-TT-Iin">
                                         <rect key="frame" x="0.0" y="243" width="166" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -134,11 +134,28 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDs-cu-mpC">
+                                <rect key="frame" x="20" y="772" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Fhd-8h-yYG"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <state key="normal" title="Sortear">
+                                    <color key="titleShadowColor" red="0.098039215690000001" green="0.052764462300000002" blue="0.064207172529999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedRaffleCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U6A-FQ-HMw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="pDs-cu-mpC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6z9-Ib-yFH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pDs-cu-mpC" secondAttribute="bottom" constant="40" id="MP6-iI-cuW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rz1-zO-okM" secondAttribute="trailing" constant="20" id="aIn-WZ-kuy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pDs-cu-mpC" secondAttribute="trailing" constant="20" id="clT-ZK-0y8"/>
                             <constraint firstItem="rz1-zO-okM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="dG4-hs-UPR"/>
                             <constraint firstItem="i92-dE-OoJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="efF-Et-khd"/>
                             <constraint firstItem="i92-dE-OoJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="xho-TC-HV6"/>
@@ -149,6 +166,15 @@
                         <outlet property="cambioAutomaticoLabel" destination="nCH-zd-aiO" id="TEB-Xs-K6z"/>
                         <outlet property="combustivelLabel" destination="4SK-ST-UOR" id="1K6-ch-bQp"/>
                         <outlet property="corLabel" destination="pIz-b2-xY1" id="Mqt-a5-Lnb"/>
+                        <outlet property="labelTitle1" destination="Edq-JJ-dbD" id="f7t-fB-UQE"/>
+                        <outlet property="labelTitle2" destination="yVJ-8P-4Io" id="leu-L8-RwQ"/>
+                        <outlet property="labelTitle3" destination="d0H-6d-vCc" id="6By-u3-J3t"/>
+                        <outlet property="labelTitle4" destination="bvT-3D-bDd" id="CZm-VR-22N"/>
+                        <outlet property="labelTitle5" destination="IEd-bS-7cs" id="vsQ-iA-n1w"/>
+                        <outlet property="labelTitle6" destination="KzE-nS-a88" id="okj-t8-mNq"/>
+                        <outlet property="labelTitle7" destination="2IK-TT-Iin" id="GNK-Q7-wel"/>
+                        <outlet property="labelTitle8" destination="5h7-d2-9NP" id="DDI-SG-e7h"/>
+                        <outlet property="labelTitle9" destination="DjM-TG-9dl" id="6Sh-Vq-aPP"/>
                         <outlet property="marcaLabel" destination="Q9K-uV-9Be" id="S4W-ov-ybc"/>
                         <outlet property="modeloLabel" destination="nHJ-81-UqN" id="PGL-gB-vXJ"/>
                         <outlet property="motorLabel" destination="WO2-4B-XwC" id="cgr-Km-lr3"/>
@@ -163,6 +189,12 @@
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>

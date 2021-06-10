@@ -14,6 +14,8 @@
 		5BC2E2CB265DC3EC00F83EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC2E2CA265DC3EC00F83EC7 /* Assets.xcassets */; };
 		5BC2E2CE265DC3EC00F83EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC2E2CC265DC3EC00F83EC7 /* LaunchScreen.storyboard */; };
 		5BC2E2D8265DC50D00F83EC7 /* Carro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2E2D7265DC50D00F83EC7 /* Carro.swift */; };
+		5BEEBBF92666EFBD005A4DAC /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEEBBF82666EFBD005A4DAC /* Moto.swift */; };
+		5BEEBBFC2666F00E005A4DAC /* Veiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEEBBFB2666F00E005A4DAC /* Veiculo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		5BC2E2CD265DC3EC00F83EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BC2E2CF265DC3EC00F83EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BC2E2D7265DC50D00F83EC7 /* Carro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carro.swift; sourceTree = "<group>"; };
+		5BEEBBF82666EFBD005A4DAC /* Moto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moto.swift; sourceTree = "<group>"; };
+		5BEEBBFB2666F00E005A4DAC /* Veiculo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Veiculo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				5BC2E2D7265DC50D00F83EC7 /* Carro.swift */,
+				5BEEBBF82666EFBD005A4DAC /* Moto.swift */,
+				5BEEBBFB2666F00E005A4DAC /* Veiculo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BEEBBF92666EFBD005A4DAC /* Moto.swift in Sources */,
+				5BEEBBFC2666F00E005A4DAC /* Veiculo.swift in Sources */,
 				5BC2E2C6265DC3E900F83EC7 /* ViewController.swift in Sources */,
 				5BC2E2D8265DC50D00F83EC7 /* Carro.swift in Sources */,
 				5BC2E2C2265DC3E900F83EC7 /* AppDelegate.swift in Sources */,
