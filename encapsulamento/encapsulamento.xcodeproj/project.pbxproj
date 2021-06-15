@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B54BC27267963D90060705A /* DirigivelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54BC26267963D90060705A /* DirigivelProtocol.swift */; };
 		987953C42672C7DC00C75EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987953C32672C7DC00C75EE1 /* AppDelegate.swift */; };
 		987953C62672C7DC00C75EE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987953C52672C7DC00C75EE1 /* SceneDelegate.swift */; };
 		987953C82672C7DC00C75EE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987953C72672C7DC00C75EE1 /* ViewController.swift */; };
@@ -15,11 +16,11 @@
 		987953D02672C7DD00C75EE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 987953CE2672C7DD00C75EE1 /* LaunchScreen.storyboard */; };
 		987953D82672C92B00C75EE1 /* Carro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987953D72672C92B00C75EE1 /* Carro.swift */; };
 		987953DA2672D2C000C75EE1 /* Motorista.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987953D92672D2C000C75EE1 /* Motorista.swift */; };
-		987953DF2672EC0B00C75EE1 /* DirigivelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987953DE2672EC0B00C75EE1 /* DirigivelProtocol.swift */; };
 		987953E12672EC9700C75EE1 /* Moto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987953E02672EC9700C75EE1 /* Moto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B54BC26267963D90060705A /* DirigivelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirigivelProtocol.swift; sourceTree = "<group>"; };
 		987953C02672C7DC00C75EE1 /* encapsulamento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = encapsulamento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		987953C32672C7DC00C75EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		987953C52672C7DC00C75EE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		987953D12672C7DD00C75EE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		987953D72672C92B00C75EE1 /* Carro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carro.swift; sourceTree = "<group>"; };
 		987953D92672D2C000C75EE1 /* Motorista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorista.swift; sourceTree = "<group>"; };
-		987953DE2672EC0B00C75EE1 /* DirigivelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirigivelProtocol.swift; sourceTree = "<group>"; };
 		987953E02672EC9700C75EE1 /* Moto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +98,7 @@
 		987953DD2672EBF600C75EE1 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				987953DE2672EC0B00C75EE1 /* DirigivelProtocol.swift */,
+				5B54BC26267963D90060705A /* DirigivelProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 			files = (
 				987953E12672EC9700C75EE1 /* Moto.swift in Sources */,
 				987953C82672C7DC00C75EE1 /* ViewController.swift in Sources */,
-				987953DF2672EC0B00C75EE1 /* DirigivelProtocol.swift in Sources */,
+				5B54BC27267963D90060705A /* DirigivelProtocol.swift in Sources */,
 				987953D82672C92B00C75EE1 /* Carro.swift in Sources */,
 				987953C42672C7DC00C75EE1 /* AppDelegate.swift in Sources */,
 				987953C62672C7DC00C75EE1 /* SceneDelegate.swift in Sources */,
