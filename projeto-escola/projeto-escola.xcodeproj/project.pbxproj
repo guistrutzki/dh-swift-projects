@@ -16,6 +16,8 @@
 		5B01B9E8267C081D00B4F59A /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B01B9E7267C081D00B4F59A /* Pessoa.swift */; };
 		5B01B9EC267C205600B4F59A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B01B9EA267C205600B4F59A /* CustomCell.swift */; };
 		5B01B9ED267C205600B4F59A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B01B9EB267C205600B4F59A /* CustomCell.xib */; };
+		5B21409126853E1700BE6D27 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21409026853E1700BE6D27 /* EditViewController.swift */; };
+		5BC76D412682A2B800DF319C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC76D402682A2B800DF319C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5B01B9E7267C081D00B4F59A /* Pessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
 		5B01B9EA267C205600B4F59A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		5B01B9EB267C205600B4F59A /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		5B21409026853E1700BE6D27 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		5BC76D402682A2B800DF319C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,11 @@
 			children = (
 				5B01B9EF267C206800B4F59A /* CustomCell */,
 				5B01B9D2267C04EE00B4F59A /* AppDelegate.swift */,
+				5B21409026853E1700BE6D27 /* EditViewController.swift */,
 				5B01B9D4267C04EE00B4F59A /* SceneDelegate.swift */,
 				5B01B9D6267C04EE00B4F59A /* ViewController.swift */,
 				5B01B9D8267C04EE00B4F59A /* Main.storyboard */,
+				5BC76D402682A2B800DF319C /* DetailViewController.swift */,
 				5B01B9DB267C04EF00B4F59A /* Assets.xcassets */,
 				5B01B9DD267C04EF00B4F59A /* LaunchScreen.storyboard */,
 				5B01B9E0267C04EF00B4F59A /* Info.plist */,
@@ -158,8 +164,10 @@
 				5B01B9D7267C04EE00B4F59A /* ViewController.swift in Sources */,
 				5B01B9D3267C04EE00B4F59A /* AppDelegate.swift in Sources */,
 				5B01B9EC267C205600B4F59A /* CustomCell.swift in Sources */,
+				5BC76D412682A2B800DF319C /* DetailViewController.swift in Sources */,
 				5B01B9E8267C081D00B4F59A /* Pessoa.swift in Sources */,
 				5B01B9D5267C04EE00B4F59A /* SceneDelegate.swift in Sources */,
+				5B21409126853E1700BE6D27 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
