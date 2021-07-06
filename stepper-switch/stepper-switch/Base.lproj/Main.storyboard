@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stepper_switch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdE-4f-DlB">
+                                <rect key="frame" x="182.5" y="145" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchDidChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fe6-yh-set"/>
+                                </connections>
+                            </switch>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="S8s-kS-SUj">
+                                <rect key="frame" x="160" y="225" width="94" height="32"/>
+                                <connections>
+                                    <action selector="stepperDidChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Kb-dB-9WO"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eov-cc-BSQ">
+                                <rect key="frame" x="186" y="316" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S8s-kS-SUj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Ue-Qc-PD1"/>
+                            <constraint firstItem="eov-cc-BSQ" firstAttribute="top" secondItem="S8s-kS-SUj" secondAttribute="bottom" constant="59" id="907-0g-npR"/>
+                            <constraint firstItem="S8s-kS-SUj" firstAttribute="centerX" secondItem="kdE-4f-DlB" secondAttribute="centerX" id="LwZ-rK-cq1"/>
+                            <constraint firstItem="kdE-4f-DlB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="hnB-Wa-G9F"/>
+                            <constraint firstItem="eov-cc-BSQ" firstAttribute="centerX" secondItem="kdE-4f-DlB" secondAttribute="centerX" id="lnm-p6-Wn9"/>
+                            <constraint firstItem="S8s-kS-SUj" firstAttribute="top" secondItem="kdE-4f-DlB" secondAttribute="bottom" constant="49" id="svq-N4-lEn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelComponent" destination="eov-cc-BSQ" id="QJM-EA-Les"/>
+                        <outlet property="stepperComponent" destination="S8s-kS-SUj" id="JS6-8L-eJv"/>
+                        <outlet property="switchComponent" destination="kdE-4f-DlB" id="Q1P-6s-rib"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
