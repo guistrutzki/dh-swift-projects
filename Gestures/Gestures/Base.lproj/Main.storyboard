@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VN9-4x-yop">
+                                <rect key="frame" x="40" y="104" width="334" height="112"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="334" id="Kax-mI-hOh"/>
+                                    <constraint firstAttribute="height" constant="112" id="rrW-J6-oC6"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="elD-SA-kCl" appends="YES" id="UmM-6E-A5t"/>
+                                    <outletCollection property="gestureRecognizers" destination="chZ-kq-StY" appends="YES" id="u7T-91-RVe"/>
+                                    <outletCollection property="gestureRecognizers" destination="9NI-VY-dPB" appends="YES" id="gTH-Zu-AvL"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOn-7c-QUT">
+                                <rect key="frame" x="80" y="296" width="254" height="128"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="AYm-sq-DVo"/>
+                                    <constraint firstAttribute="width" constant="240" id="GSe-2O-P02"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VN9-4x-yop" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="2jR-dT-JXr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VN9-4x-yop" secondAttribute="trailing" constant="40" id="5r4-i7-kcv"/>
+                            <constraint firstItem="VN9-4x-yop" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Imr-ig-dcG"/>
+                            <constraint firstItem="xOn-7c-QUT" firstAttribute="top" secondItem="VN9-4x-yop" secondAttribute="bottom" constant="80" id="U1P-wJ-CW0"/>
+                            <constraint firstItem="xOn-7c-QUT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Vy9-Cf-bmO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xOn-7c-QUT" secondAttribute="trailing" constant="80" id="bqO-mG-bXb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewRef" destination="xOn-7c-QUT" id="NK8-Pn-f79"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="elD-SA-kCl">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="BYZ-38-t0r" id="jhn-zl-TDg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="chZ-kq-StY">
+                    <connections>
+                        <action selector="swipeGestureAction:" destination="BYZ-38-t0r" id="1NL-Em-SfQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="9NI-VY-dPB">
+                    <connections>
+                        <action selector="longPressGestureAction:" destination="BYZ-38-t0r" id="Ifj-jL-gxw"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="101" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

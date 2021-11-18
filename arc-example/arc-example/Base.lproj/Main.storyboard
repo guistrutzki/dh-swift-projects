@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aMu-xd-RnD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="arc_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXd-Ye-BTj">
+                                <rect key="frame" x="157" y="433" width="100" height="30"/>
+                                <state key="normal" title="Mostrar modal"/>
+                                <connections>
+                                    <action selector="didTapShowModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e6Y-eN-V9w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XXd-Ye-BTj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YSt-Jd-W0j"/>
+                            <constraint firstItem="XXd-Ye-BTj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b8W-JE-0KA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SKF-eu-3lI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="114.50892857142857"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="8ev-Wc-LZb">
+            <objects>
+                <viewController storyboardIdentifier="ModalViewController" id="JNd-Ly-g4k" customClass="ModalViewController" customModule="arc_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PoY-MD-hgg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCY-nn-OUU">
+                                <rect key="frame" x="186.5" y="433" width="41" height="30"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="JNd-Ly-g4k" eventType="touchUpInside" id="whs-LZ-5aO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FL-99-5eo">
+                                <rect key="frame" x="185.5" y="498" width="43" height="30"/>
+                                <state key="normal" title="Salvar"/>
+                                <connections>
+                                    <action selector="didTapSaveButton:" destination="JNd-Ly-g4k" eventType="touchUpInside" id="hrG-Ex-f6E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GDv-A7-caK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qCY-nn-OUU" firstAttribute="centerX" secondItem="PoY-MD-hgg" secondAttribute="centerX" id="4v2-6c-5b8"/>
+                            <constraint firstItem="8FL-99-5eo" firstAttribute="centerX" secondItem="PoY-MD-hgg" secondAttribute="centerX" id="61o-D2-g8v"/>
+                            <constraint firstItem="8FL-99-5eo" firstAttribute="top" secondItem="qCY-nn-OUU" secondAttribute="bottom" constant="35" id="9IO-lL-sUx"/>
+                            <constraint firstItem="qCY-nn-OUU" firstAttribute="centerY" secondItem="PoY-MD-hgg" secondAttribute="centerY" id="XHR-b1-G04"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jG-dQ-xBW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YpT-Bm-a3a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aMu-xd-RnD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uYB-jN-dq6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="s4x-fc-XCZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBT-R9-4eu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

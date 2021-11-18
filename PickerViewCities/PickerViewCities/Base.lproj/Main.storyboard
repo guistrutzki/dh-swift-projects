@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerViewCities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Floripa" translatesAutoresizingMaskIntoConstraints="NO" id="Wmt-26-nAZ">
+                                <rect key="frame" x="20" y="155" width="374" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="iYY-NZ-LTC"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5u-dD-gQ7">
+                                <rect key="frame" x="0.0" y="520" width="414" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DB-1X-buN">
+                                <rect key="frame" x="20" y="776" width="374" height="36"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Selecionar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EII-Ce-AF2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhY-ER-mgp">
+                                <rect key="frame" x="20" y="84" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="EuT-pY-M8n"/>
+                                    <constraint firstAttribute="height" constant="21" id="d7F-h6-ilj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lhY-ER-mgp" secondAttribute="trailing" constant="20" id="6sO-C1-u9Z"/>
+                            <constraint firstItem="s5u-dD-gQ7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AGt-cV-IOX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wmt-26-nAZ" secondAttribute="trailing" constant="20" id="Ipu-4z-qXt"/>
+                            <constraint firstItem="Wmt-26-nAZ" firstAttribute="top" secondItem="lhY-ER-mgp" secondAttribute="bottom" constant="50" id="LtY-rf-qx0"/>
+                            <constraint firstItem="7DB-1X-buN" firstAttribute="top" secondItem="s5u-dD-gQ7" secondAttribute="bottom" constant="40" id="ZMe-PW-GRO"/>
+                            <constraint firstItem="7DB-1X-buN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aIm-Fi-acG"/>
+                            <constraint firstItem="s5u-dD-gQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eKb-PC-Wqf"/>
+                            <constraint firstItem="lhY-ER-mgp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="nwn-al-uWV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7DB-1X-buN" secondAttribute="trailing" constant="20" id="oSA-PA-cvp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7DB-1X-buN" secondAttribute="bottom" constant="50" id="riL-08-kI4"/>
+                            <constraint firstItem="Wmt-26-nAZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="u67-Kc-YcN"/>
+                            <constraint firstItem="lhY-ER-mgp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yQY-po-gwv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewRef" destination="Wmt-26-nAZ" id="Kpw-iG-lgY"/>
+                        <outlet property="labelRef" destination="lhY-ER-mgp" id="SXp-Eb-EYr"/>
+                        <outlet property="pickerViewRef" destination="s5u-dD-gQ7" id="3c2-5h-AWu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Floripa" width="1140" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
